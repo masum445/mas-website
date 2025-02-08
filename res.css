@@ -1,0 +1,200 @@
+/* 🌟 Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔹 Header (Navbar) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* 🔹 Log In Button */
+.login-btn {
+    background: #ffcc00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background: #ffa500;
+    color: black;
+}
+
+/* 🔹 Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* 🔹 Banner Section */
+#banner {
+    background: url('cover.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* 🔹 Button */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: orange;
+}
+
+/* 🔹 About Us */
+#about-us {
+    text-align: center;
+    padding: 30px;
+}
+
+/* 🔹 Menu Section */
+#menu-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* 🔹 Contact Section */
+#contact {
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: white;
+}
+
+/* 🔹 Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: gray;
+    color: white;
+}
+
+/* 🔹 Responsive Styles */
+@media screen and (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
